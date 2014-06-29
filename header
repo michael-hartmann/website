@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>michael@speicherleck</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+    <center>
+        <h1><a href="http://speicherleck.de/michael/">michael@speicherleck</a></h1>
+
+        <h1>
+        <a href="index.html">Start</a> |
+        <a href="talks.html">Vorträge</a> |
+        <a href="projects.html">Projekte</a> |
+        <a href="publications.html">Veröffentlichungen</a>
+        </h1>
+    </center>
+      </header>
+      <section>
+
+

@@ -1,0 +1,82 @@
+<h2 id="abstract">Negative Casimir entropies in the plane&ndash;sphere geometry</h2>
+
+<p>
+<img border="0" src="images/geometry.png" align="right" hspace="5" vspace="5" alt="geometry">
+In this <a href="https://github.com/michael-hartmann/Casimir/blob/master/thesis.pdf?raw=true">master thesis</a>, we study the Casimir effect in the plane&ndash;sphere
+geometry, in particular with respect to the effect of negative entropies. We
+show that the Maxwell equations in vacuum are equivalent to the source-free
+vector Helmholtz equation and introduce the plane wave basis and the multipole
+basis as solutions. Moreover, we present the solutions to the scattering
+problems of electromagnetic waves at a planar, homogenous interface and at a
+sphere, where the metallic properties of plane and sphere are either described
+by the Drude model, the plasma model or the model of perfect reflectors. With
+the Fresnel and Mie coefficients as well as the solutions of the Helmholtz
+equation at hand, we apply the scattering approach to the plane&ndash;plane and
+to the plane&ndash;sphere geometry. Although equivalent to the matrix elements
+of <a href="http://arxiv.org/abs/1005.4294">Durand et al.</a>, our matrix
+elements of the scattering matrix in the plane--sphere geometry avoid Wigner
+D-matrix elements. After changing to scaled quantities the free energy for
+perfect reflectors depends only on temperature and separation. Also, we
+considered analytically the contribution to the free energy of the Matsubara
+frequency ξ=0, because this special case raises numerical problems. The
+software implementation of the formulas reveals several serious numerical
+problems, e.g. the problem of computing the determinant of a matrix whose
+elements differ by hundreds of orders of magnitude. We discuss these
+problems and present solutions for a fast and stable software implementation.</p>
+
+<p>We compare our numerical results with the proximity force approximation
+(PFA) that links the unknown free interaction energy of arbitrary geometries to
+the well-known energy of the plane&ndash;plane geometry. We show that indeed
+the PFA becomes a good approximation in the limit of small separations. As
+entropies obtained using the PFA are always positive, we conjecture that the
+effect of negative entropies vanishes for small separations. This assumption is
+strengthened by the study of the large&ndash;distance limit. We derive an
+analytical expression for the free energy in the limit of large separations and
+show that the negative entropies are linked with a change of polarization
+within a round trip. For low temperatures we show that the entropy as a
+function of the separation has a minimum and probably tends to zero for small
+separations. As the matrix elements of the scattering matrix become independent
+of the particular properties of the material in the high temperature limit, we
+study this limit for perfect reflectors as well as for Drude mirrors. We rule
+out several suggestions for the free energy at small separations and proof the
+validity of an expansion <a href="http://arxiv.org/abs/1207.5921">Bimonte and
+Emig</a>. At last, we show that negative entropies exist over a wide range of
+parameters. In accordance with previous assumptions, we find that negative
+entropies disappear for small separations. The smaller the separation the lower
+is the temperature at which the entropy becomes positive. This means that the
+effect of negative entropies is more evident for large separations. In contrast
+to this, at the same time the Casimir effect becomes less pronounced for large
+separations.</p>
+
+<h2 id="downloads">Downloads</h2>
+
+<p><ul>
+<li><a href="https://github.com/michael-hartmann/Casimir/blob/master/projektarbeit_talk.pdf?raw=true">Projektarbeit</a> (talk, german)</li>
+<li><a href="https://github.com/michael-hartmann/Casimir/blob/master/fachpraktium.pdf?raw=true">Fachpraktikumsbericht</a> (report, german)</li>
+<li><a href="https://github.com/michael-hartmann/Casimir/blob/master/thesis.pdf?raw=true">master thesis</a> (english)</li>
+<li><a href="https://github.com/michael-hartmann/Casimir/blob/master/colloquium_talk.pdf?raw=true">colloquium</a> (talk, german)</li>
+</ul></p>
+
+
+<h2 id="implementation">Implementation</h2>
+<p>The implementation is licensed under the terms of the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License v2</a> and is available at <a href="https://github.com/michael-hartmann/Casimir">github</a>. However, if you use this program for publications, please consider to cite my work.</p>
+
+<h3 id="installation">Installation</h3>
+<p>If you use Linux or Unix, you need the gcc and development libraries and
+header files for the standard C library. On a Debian-like Linux the commands
+<pre><code>$ sudo apt-get install gcc libc6-dev make
+$ make
+</code></pre>
+should install all dependencies and compile the code.
+</p>
+
+<h3 id="programs">Programs</h3>
+
+<p><ul>
+<li>casimir: Calculate the free energy F(T, L/R) in scaled quantities.</li>
+<li>casimir_hiT: Calculate the free energy F(T→&infin;, L/R) for very high temperaturs.</li>
+<li>casimir_logdetD: Calculate log(det(D)) for given T, L/R, n and m</li>
+<li>casimir_tests: Run unit tests</li>
+<li>pfa.py: Implementation of the PFA (proximity force approximation)</li>
+<li>Casimir.py: Python wrapper for casimir</li>
+</ul></p>
